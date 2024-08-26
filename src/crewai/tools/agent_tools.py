@@ -43,6 +43,7 @@ class AgentTools(BaseModel):
             if is_list:
                 coworker = coworker[1:-1].split(",")[0]
         return self._execute(coworker, task, context)
+        def ask_question : str, context: str, coworker: Union{str, None} = None, **kwargs
 
     def ask_question(
         self, question: str, context: str, coworker: Union[str, None] = None, **kwargs
